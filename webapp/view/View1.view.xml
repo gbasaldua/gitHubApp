@@ -3,7 +3,39 @@
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
-				<content></content>
+				<customHeader>
+					<Toolbar>
+						<Button type="Back" press="onPress"/>
+						<ToolbarSpacer/>
+						<Title text="{i18n>title}" level="H2"/>
+						<ToolbarSpacer/>
+						<Button icon="sap-icon://edit" type="Transparent" press="onPress" ariaLabelledBy="editButtonLabel"/>
+					</Toolbar>
+				</customHeader>
+				<content>
+					<HBox>
+						<Button text="Default" press="onPress">
+							<layoutData>
+								<FlexItemData growFactor="1"/>
+							</layoutData>
+						</Button>
+						<Button type="Accept" text="Accept" press="onPress">
+							<layoutData>
+								<FlexItemData growFactor="1"/>
+							</layoutData>
+						</Button>
+						<Button type="Reject" text="Reject" press="onPress">
+							<layoutData>
+								<FlexItemData growFactor="1"/>
+							</layoutData>
+						</Button>
+						<Button text="Coming Soon" press="onPress" enabled="false">
+							<layoutData>
+								<FlexItemData growFactor="1"/>
+							</layoutData>
+						</Button>
+					</HBox>
+				</content>
 			</Page>
 		</pages>
 	</App>
