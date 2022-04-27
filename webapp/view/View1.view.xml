@@ -38,7 +38,7 @@
 								<FlexItemData growFactor="1"/>
 							</layoutData>
 						</Button>
-						<Button text="Coming Soon" press="onPress" enabled="false">
+						<Button text="Coming Soon" press="onPress" enabled="true">
 							<layoutData>
 								<FlexItemData growFactor="1"/>
 							</layoutData>
